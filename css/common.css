@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    color: #1d1d1d;
+    font-family: "Montserrat", "Noto Sans KR", sans-serif;
+    overflow-x: hidden;
+}
+div{
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+ul, ol, dl{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+p{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.inner{
+    position: relative;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 1300px){
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+}
+@media screen and (max-width: 424px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
