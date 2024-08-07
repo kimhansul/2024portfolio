@@ -24,7 +24,7 @@ $(window).scroll(function(){
         $('.navigation ul li').eq(2).addClass('on').siblings().removeClass('on');
         $('#contact .contact_wrap h2').removeClass('on');
     }
-    else if(scTop >= contactOffset.top - 400){
+    else if(scTop >= contactOffset.top - 450){
         $('.navigation ul').eq(0).removeClass('w_style g_style');
         $('.navigation ul li').eq(3).addClass('on').siblings().removeClass('on');
         $('#contact .contact_wrap h2').addClass('on');
