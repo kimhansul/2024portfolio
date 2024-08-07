@@ -5,26 +5,26 @@ $(window).scroll(function(){
     var workOffset = $('#work').eq(0).offset();
     var contactOffset = $('#contact').eq(0).offset();
 
-    if(scTop >= mainOffset.top && scTop < aboutOffset.top - 400){
+    if(scTop >= mainOffset.top && scTop < aboutOffset.top - 450){
         $('.navigation ul').eq(0).addClass('w_style');
         $('.navigation ul li').eq(0).addClass('on').siblings().removeClass('on');
         $('header').removeClass('w_style');
         $('header ul li a svg rect').css('stroke','#fff');
         $('header ul li a svg path').css('stroke','#fff');
     }
-    else if(scTop >= aboutOffset.top - 400 && scTop < workOffset.top - 400){
+    else if(scTop >= aboutOffset.top - 450 && scTop < workOffset.top - 450){
         $('header').addClass('w_style');
         $('.navigation ul').eq(0).removeClass('w_style g_style');
         $('.navigation ul li').eq(1).addClass('on').siblings().removeClass('on');
         $('header ul li a svg rect').css('stroke','#1d1d1d');
         $('header ul li a svg path').css('stroke','#1d1d1d');
     }
-    else if(scTop >= workOffset.top - 400 && scTop < contactOffset.top - 400){
+    else if(scTop >= workOffset.top - 450 && scTop < contactOffset.top - 450){
         $('.navigation ul').eq(0).addClass('g_style');
         $('.navigation ul li').eq(2).addClass('on').siblings().removeClass('on');
         $('#contact .contact_wrap h2').removeClass('on');
     }
-    else if(scTop >= contactOffset.top - 450){
+    else if(scTop >= contactOffset.top - 600){
         $('.navigation ul').eq(0).removeClass('w_style g_style');
         $('.navigation ul li').eq(3).addClass('on').siblings().removeClass('on');
         $('#contact .contact_wrap h2').addClass('on');
