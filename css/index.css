@@ -598,7 +598,7 @@ header ul li a svg path{
 }
 @media screen and (max-width: 1028px){
     #contact .inner{
-        padding: 25%;
+        padding: 27% 25%;
     }
 }
 @media screen and (max-width: 768px){

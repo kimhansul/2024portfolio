@@ -19,7 +19,7 @@ $(window).scroll(function(){
         $('header ul li a svg rect').css('stroke','#1d1d1d');
         $('header ul li a svg path').css('stroke','#1d1d1d');
     }
-    else if(scTop >= workOffset.top - 450 && scTop < contactOffset.top - 450){
+    else if(scTop >= workOffset.top - 450 && scTop < contactOffset.top - 600){
         $('.navigation ul').eq(0).addClass('g_style');
         $('.navigation ul li').eq(2).addClass('on').siblings().removeClass('on');
         $('#contact .contact_wrap h2').removeClass('on');
