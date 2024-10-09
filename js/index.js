@@ -18,6 +18,7 @@ $(window).scroll(function(){
         $('.navigation ul li').eq(1).addClass('on').siblings().removeClass('on');
         $('header ul li a svg rect').css('stroke','#1d1d1d');
         $('header ul li a svg path').css('stroke','#1d1d1d');
+        $('#about').addClass('on');
     }
     else if(scTop >= workOffset.top - 450 && scTop < contactOffset.top - 600){
         $('.navigation ul').eq(0).addClass('g_style');

@@ -195,6 +195,11 @@ header ul li a svg path{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    filter: blur(8px);
+    transition: .5s all;
+}
+#about.on .profile_img{
+    filter: blur(0);
 }
 #about .profile_img li:not(.main_img){
     margin-top: 15px;
@@ -232,15 +237,32 @@ header ul li a svg path{
     border-bottom: 1px dashed #999;
     padding-bottom: 35px;
     margin-top: 25px;
+    transform: translateX(-15px);
+    transition: 1.2s all .6s;
+    opacity: 0;
+}
+#about.on .profile_content{
+    transform: translateX(0);
+    opacity: 1;
 }
 #about .profile_content h2{
     font-weight: 400;
     margin-bottom: 20px;
 }
-#about .info_wrap {
+#about .profile_content p ~ p{
+    margin-top: 20px;
+}
+#about .info_wrap{
     display: flex;
     flex-wrap: wrap;
     margin-top: 35px;
+    transform: translateY(15px);
+    transition: 1.2s all 1s;
+    opacity: 0;
+}
+#about.on .info_wrap{
+    transform: translateY(0);
+    opacity: 1;
 }
 #about .info_wrap dl dt {
     color: #919E71;
@@ -286,7 +308,7 @@ header ul li a svg path{
 }
 #about .info_wrap .skills_list dd .skill_info{
     position: absolute;
-    top: -120%;
+    bottom: -110%;
     left: 50%;
     font-size: 18px;
     background: #919E71;
@@ -300,14 +322,14 @@ header ul li a svg path{
 #about .info_wrap .skills_list dd .skill_info::after{
     content: '';
     position: absolute;
-    bottom: -8px;
+    top: -8px;
     left: 50%;
     width: 0;
     height: 0;
-    border-top: 4px solid #919E71;
+    border-top: 4px solid transparent;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid #919E71;
     transform: translateX(-50%);
 }
 #about .info_wrap .skills_list dd:hover .skill_info{
@@ -518,13 +540,13 @@ header ul li a svg path{
 }
 @media screen and (max-width: 1630px){
     #work .inner{
-        padding: 0px 140px;
+        padding: 0px 150px;
     }
     #work button.slide_btn_left{
-        margin-left: 70px;
+        margin-left: 90px;
     }
     #work button.slide_btn_right{
-        margin-right: 70px;
+        margin-right: 90px;
     }
 }
 @media screen and (max-width: 1300px){
